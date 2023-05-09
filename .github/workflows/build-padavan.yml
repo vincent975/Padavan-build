@@ -44,7 +44,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: K2P
+        TNAME: MI-4
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
@@ -125,5 +125,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-packages
+        name: Padavan-MI-4
         path: /opt/images
